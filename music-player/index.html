@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonrisa Music Player · Your local music, beautifully</title>
+<meta name="description" content="A beautiful, fast music player for the songs on your Android phone. Album art, listening stats, a yearly Recap, a home screen widget and Chromecast. No accounts, no ads.">
+<link rel="canonical" href="https://sonrisacode.com/music-player/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sonrisacode.com/music-player/">
+<meta property="og:title" content="Sonrisa Music Player">
+<meta property="og:description" content="Your local music, beautiful and fast. Stats, a yearly Recap and Chromecast. No accounts, no ads.">
+<meta property="og:image" content="https://sonrisacode.com/img/music/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#7128f0">
+<link rel="icon" href="../img/music/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Sonrisa Music Player","operatingSystem":"Android","applicationCategory":"MultimediaApplication","url":"https://sonrisacode.com/music-player/","image":"https://sonrisacode.com/img/music/icon.png","downloadUrl":"https://play.google.com/store/apps/details?id=com.nilportugues.sonrisa_music_player"}
+</script>
+</head>
+<body class="music">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="../img/music/icon-192.png" alt="" width="30" height="30" style="border-radius:8px">Sonrisa</a>
+    <nav class="nav-links">
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <a href="../gallery/">Gallery</a>
+      <a class="pill" href="#download">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="blobs"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div></div>
+    <div class="wrap">
+      <div>
+        <img class="app-icon reveal" src="../img/music/icon-192.png" alt="Sonrisa Music Player icon" width="84" height="84">
+        <h1 class="reveal d1">Your music.<br><em>Beautifully yours.</em></h1>
+        <p class="lead reveal d2">A music player for the songs already on your phone. It finds the album art, keeps your listening stats and gives you a yearly Recap of what you loved. No accounts, no ads.</p>
+        <div class="get reveal d3" id="download">
+          <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.nilportugues.sonrisa_music_player"><svg viewBox="0 0 28 30" aria-hidden="true"><path fill="#00d7fe" d="M1.5 1.2 15.6 15 1.5 28.8C1 28.5.8 28 .8 27.3V2.7c0-.7.2-1.2.7-1.5z"/><path fill="#ffce00" d="m20.3 19.7-4.7-4.7 4.7-4.7 5.6 3.2c1.6.9 1.6 2.4 0 3.3z"/><path fill="#ff3a44" d="M20.3 19.7 15.6 15 1.5 28.8c.5.5 1.4.6 2.4 0z"/><path fill="#00f076" d="M20.3 10.3 3.9 1c-1-.6-1.9-.5-2.4 0L15.6 15z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+          <div class="qr-card"><img src="../img/music/qr.svg" alt="QR code to download Sonrisa Music Player on Google Play" width="92" height="92"><div><strong>Scan to install</strong><span>Point your phone's camera here</span></div></div>
+        </div>
+      </div>
+      <div class="stage reveal d2" aria-hidden="true">
+        <div class="phone p2"><img src="../img/music/artists.jpg" alt="" width="540" height="1200"></div>
+        <div class="phone p3"><img src="../img/music/recap3.jpg" alt="" width="540" height="1200"></div>
+        <div class="phone p1"><img src="../img/music/songs.jpg" alt="" width="540" height="1200"></div>
+        <div class="badge-float one">🎁 Your year in music</div>
+        <div class="badge-float two">🌍 72 languages</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>MP3 · FLAC · M4A · OGG</span><span>Yearly Recap</span><span>Listening stats</span><span>Home screen widget</span><span>Chromecast</span><span>Sleep timer</span><span>Skips silences</span><span>72 languages</span>
+      <span>MP3 · FLAC · M4A · OGG</span><span>Yearly Recap</span><span>Listening stats</span><span>Home screen widget</span><span>Chromecast</span><span>Sleep timer</span><span>Skips silences</span><span>72 languages</span>
+    </div>
+  </div>
+
+  <section class="section" id="screens">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A closer look</span>
+        <h2>Made to be looked at.</h2>
+        <p>Tap any screen to see it full size, then tap again to zoom in.</p>
+      </div>
+      <div class="carousel-nav" data-carousel="shots"><button data-dir="-1" aria-label="Scroll left">←</button><button data-dir="1" aria-label="Scroll right">→</button></div>
+    </div>
+    <div class="shots" id="shots">
+      <figure class="shot"><button data-zoom="../img/music/songs@2x.jpg" data-caption="Songs"><div class="phone"><img src="../img/music/songs.jpg" alt="Songs screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Songs<span>Your library, with its covers</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/albums@2x.jpg" data-caption="Albums"><div class="phone"><img src="../img/music/albums.jpg" alt="Albums screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Albums<span>Every album at a glance</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/artists@2x.jpg" data-caption="Artists"><div class="phone"><img src="../img/music/artists.jpg" alt="Artists screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Artists<span>Duplicates merged</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/player@2x.jpg" data-caption="Now playing"><div class="phone"><img src="../img/music/player.jpg" alt="Now playing screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Now playing<span>Big artwork, swipe down to close</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/player-light@2x.jpg" data-caption="Light mode"><div class="phone"><img src="../img/music/player-light.jpg" alt="Light mode screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Light mode<span>Or dark, or automatic</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/stats@2x.jpg" data-caption="Stats"><div class="phone"><img src="../img/music/stats.jpg" alt="Stats screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Stats<span>Your top songs</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/calendar@2x.jpg" data-caption="Calendar"><div class="phone"><img src="../img/music/calendar.jpg" alt="Calendar screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Calendar<span>Every day you listened</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/recap2@2x.jpg" data-caption="Recap"><div class="phone"><img src="../img/music/recap2.jpg" alt="Recap screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Recap<span>Minutes listened</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/recap3@2x.jpg" data-caption="Song of the year"><div class="phone"><img src="../img/music/recap3.jpg" alt="Song of the year screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Song of the year<span>Did you guess it?</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/recap4@2x.jpg" data-caption="Top artists"><div class="phone"><img src="../img/music/recap4.jpg" alt="Top artists screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Top artists<span>The ones that ran your year</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/recap5@2x.jpg" data-caption="Album of the year"><div class="phone"><img src="../img/music/recap5.jpg" alt="Album of the year screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Album of the year<span>And how long you spent in it</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/recap6@2x.jpg" data-caption="Personality"><div class="phone"><img src="../img/music/recap6.jpg" alt="Personality screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Personality<span>Early bird or night owl?</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/music/recap8@2x.jpg" data-caption="Your top songs"><div class="phone"><img src="../img/music/recap8.jpg" alt="Your top songs screen" width="540" height="1200" loading="lazy"></div></button><figcaption>Your top songs<span>Saved as a playlist</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section" id="features" style="padding-top: 0">
+    <div class="wrap">
+      <div class="row">
+        <div class="reveal">
+          <span class="eyebrow">Library</span>
+          <h3>Every song you own, neatly sorted.</h3>
+          <p>Sonrisa scans your phone and reads the real tags inside your files, so titles, artists and albums are right.</p>
+          <ul><li>MP3, FLAC, M4A, OGG and more</li><li>Songs, albums, artists and playlists</li><li>Instant search and per-folder filters</li><li>"MONDO GROSSO" and "Mondo Grosso" count as one artist</li></ul>
+        </div>
+        <div class="row-media reveal d1"><div class="pair"><div class="phone sm"><img src="../img/music/songs-light.jpg" alt="Songs screen in light mode" width="540" height="1200" loading="lazy"></div><div class="phone sm"><img src="../img/music/albums.jpg" alt="Albums screen" width="540" height="1200" loading="lazy"></div></div></div>
+      </div>
+
+      <div class="row flip">
+        <div class="reveal">
+          <span class="eyebrow">Artwork</span>
+          <h3>Covers and artist photos, found for you.</h3>
+          <p>It uses the cover inside your file first. If there isn't one, it can look it up online. You can also pick an image yourself.</p>
+          <ul><li>Embedded covers come first</li><li>Online lookup you can switch off</li><li>Fill in all missing images in one go</li><li>Fix a wrong cover or artist in two taps</li></ul>
+        </div>
+        <div class="row-media reveal d1"><div class="pair"><div class="phone sm"><img src="../img/music/player.jpg" alt="Now playing with album art" width="540" height="1200" loading="lazy"></div><div class="phone sm"><img src="../img/music/artists.jpg" alt="Artists screen" width="540" height="1200" loading="lazy"></div></div></div>
+      </div>
+
+      <div class="row">
+        <div class="reveal">
+          <span class="eyebrow">Stats</span>
+          <h3>See how you really listen.</h3>
+          <p>Listening time, plays and a ranking of your top songs, plus a calendar heatmap. Tap any day to see what you played.</p>
+          <ul><li>Rank by plays or by minutes</li><li>All time, last 30 days or last 7 days</li><li>Counts only real listening, not skips</li><li>Private: it never leaves your phone</li></ul>
+        </div>
+        <div class="row-media reveal d1"><div class="pair"><div class="phone sm"><img src="../img/music/stats.jpg" alt="Stats ranking" width="540" height="1200" loading="lazy"></div><div class="phone sm"><img src="../img/music/calendar.jpg" alt="Listening calendar" width="540" height="1200" loading="lazy"></div></div></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="recap-band">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Recap</span>
+        <h2>Your year in music.<br>Story by story.</h2>
+        <p>Minutes listened, your song, artists and album of the year, and your listening personality. Can you guess your #1 before it's revealed?</p>
+      </div>
+    </div>
+    <div class="fan">
+      <button class="phone sm" data-zoom="../img/music/recap2@2x.jpg" data-caption="Minutes listened"><img src="../img/music/recap2.jpg" alt="Recap: minutes listened" width="540" height="1200" loading="lazy"></button>
+      <button class="phone sm" data-zoom="../img/music/recap4@2x.jpg" data-caption="Top artists"><img src="../img/music/recap4.jpg" alt="Recap: top artists" width="540" height="1200" loading="lazy"></button>
+      <button class="phone sm" data-zoom="../img/music/recap3@2x.jpg" data-caption="Song of the year"><img src="../img/music/recap3.jpg" alt="Recap: song of the year" width="540" height="1200" loading="lazy"></button>
+      <button class="phone sm" data-zoom="../img/music/recap5@2x.jpg" data-caption="Album of the year"><img src="../img/music/recap5.jpg" alt="Recap: album of the year" width="540" height="1200" loading="lazy"></button>
+      <button class="phone sm" data-zoom="../img/music/recap6@2x.jpg" data-caption="Listening personality"><img src="../img/music/recap6.jpg" alt="Recap: listening personality" width="540" height="1200" loading="lazy"></button>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow">And more</span><h2>All the little things.</h2></div>
+      <div class="grid">
+        <div class="card reveal"><div class="ic">📺</div><h4>Chromecast</h4><p>Send your music to a Chromecast on your Wi‑Fi, straight from your phone.</p></div>
+        <div class="card reveal d1"><div class="ic">📱</div><h4>Home screen widget</h4><p>Previous, play/pause and next, even with the app closed.</p></div>
+        <div class="card reveal d2"><div class="ic">🌙</div><h4>Sleep timer</h4><p>Music stops after the minutes you choose, with a visible countdown.</p></div>
+        <div class="card reveal d3"><div class="ic">🤫</div><h4>Skips silences</h4><p>Trims silence at the start and end of each track.</p></div>
+        <div class="card reveal"><div class="ic">📋</div><h4>Queue &amp; playlists</h4><p>Play next, add to queue, favorites and your own playlists.</p></div>
+        <div class="card reveal d1"><div class="ic">🔒</div><h4>Lock screen controls</h4><p>Keeps playing in the background, and picks up where you left off.</p></div>
+        <div class="card reveal d2"><div class="ic">🌍</div><h4>72 languages</h4><p>Follows your phone's language, or choose one in Settings.</p></div>
+        <div class="card reveal d3"><div class="ic">🌗</div><h4>Light &amp; dark</h4><p>Light, dark or automatic, with screen reader labels on every control.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="privacy reveal">
+      <span class="eyebrow">Privacy</span>
+      <h2>Your music stays yours.</h2>
+      <p>No accounts, no ads and no analytics. Your music, playlists and stats live on your phone. The only thing that leaves it is the optional artwork lookup (a song title and artist name), and you can turn it off in Settings.</p>
+      <div class="stats">
+        <div><b>0</b><span>accounts</span></div>
+        <div><b>0</b><span>ads</span></div>
+        <div><b>0</b><span>trackers</span></div>
+      </div>
+      <a class="link" href="privacy.html">Read the privacy policy →</a>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head center reveal"><span class="eyebrow">FAQ</span><h2>Questions? Answers.</h2></div>
+      <div class="faq">
+        <details class="reveal"><summary>Does it stream music?</summary><p>No. Sonrisa plays the music files already on your phone. It doesn't need a subscription or a connection to play.</p></details>
+        <details class="reveal"><summary>Which formats does it play?</summary><p>Common audio formats such as MP3, FLAC, M4A and OGG. It reads the tags inside the files (ID3, Vorbis, MP4) for titles, artists and albums.</p></details>
+        <details class="reveal"><summary>Do I need an account?</summary><p>No. Open the app and your music is there. There's nothing to sign up for.</p></details>
+        <details class="reveal"><summary>What leaves my phone?</summary><p>Only the optional artwork and song-details lookup: the song title and artist name are sent to the Deezer and iTunes catalogs. You can switch it off in Settings. Your stats, playlists and listening history never leave your device.</p></details>
+        <details class="reveal"><summary>Can I play music on my TV?</summary><p>Yes. Use the Cast button to send music to a Chromecast on the same Wi‑Fi network.</p></details>
+        <details class="reveal"><summary>Which languages are available?</summary><p>72. The app uses your phone's language. You can also choose another one in the app's Settings, or on Android 13+ in the per-app language settings.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="cta reveal">
+      <img class="app-icon" src="../img/music/icon-192.png" alt="" width="84" height="84">
+      <h2>Press play.</h2>
+      <p>Get Sonrisa Music Player on Google Play and fall for your music library again.</p>
+      <div class="get">
+        <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.nilportugues.sonrisa_music_player"><svg viewBox="0 0 28 30" aria-hidden="true"><path fill="#00d7fe" d="M1.5 1.2 15.6 15 1.5 28.8C1 28.5.8 28 .8 27.3V2.7c0-.7.2-1.2.7-1.5z"/><path fill="#ffce00" d="m20.3 19.7-4.7-4.7 4.7-4.7 5.6 3.2c1.6.9 1.6 2.4 0 3.3z"/><path fill="#ff3a44" d="M20.3 19.7 15.6 15 1.5 28.8c.5.5 1.4.6 2.4 0z"/><path fill="#00f076" d="M20.3 10.3 3.9 1c-1-.6-1.9-.5-2.4 0L15.6 15z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+        <div class="qr-card"><img src="../img/music/qr.svg" alt="QR code to download Sonrisa Music Player on Google Play" width="92" height="92"><div><strong>Scan to install</strong><span>On your Android phone</span></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="../">Sonrisa</a><p class="muted">Little Android apps that make you smile.</p></div>
+      <div><h5>Apps</h5><ul><li><a href="./">Music Player</a></li><li><a href="../gallery/">Gallery</a></li></ul></div>
+      <div><h5>Legal</h5><ul><li><a href="privacy.html">Privacy policy</a></li></ul></div>
+      <div><h5>Support</h5><ul><li><a href="#faq">FAQ</a></li><li><a href="mailto:CONTACT_EMAIL">Contact us</a></li></ul></div>
+    </div>
+    <div class="fine"><span>© 2026 Sonrisa. All rights reserved.</span><span>Google Play and the Google Play logo are trademarks of Google LLC.</span></div>
+  </div>
+</footer>
+</body>
+</html>

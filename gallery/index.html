@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonrisa Gallery · Your photos, by the day and on your TV</title>
+<meta name="description" content="A fast photo and video gallery for Android. Sorted by day, week, month or year, with slideshows and Chromecast. No accounts, no ads, nothing uploaded.">
+<link rel="canonical" href="https://sonrisacode.com/gallery/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sonrisacode.com/gallery/">
+<meta property="og:title" content="Sonrisa Gallery">
+<meta property="og:description" content="Your photos and videos, sorted by date and on your TV in one tap. No accounts, no ads.">
+<meta property="og:image" content="https://sonrisacode.com/img/gallery/icon.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0dae47">
+<link rel="icon" href="../img/gallery/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<script src="../site.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Sonrisa Gallery","operatingSystem":"Android","applicationCategory":"PhotographyApplication","url":"https://sonrisacode.com/gallery/","image":"https://sonrisacode.com/img/gallery/icon.png","downloadUrl":"https://play.google.com/store/apps/details?id=com.nilportugues.sonrisa_gallery"}
+</script>
+</head>
+<body class="gallery">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="../img/gallery/icon-192.png" alt="" width="30" height="30" style="border-radius:8px">Sonrisa</a>
+    <nav class="nav-links">
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <a href="../music-player/">Music Player</a>
+      <a class="pill" href="#download">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="blobs"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div></div>
+    <div class="wrap">
+      <div>
+        <img class="app-icon reveal" src="../img/gallery/icon-192.png" alt="Sonrisa Gallery icon" width="84" height="84">
+        <h1 class="reveal d1">Your photos.<br><em>Day by day.</em></h1>
+        <p class="lead reveal d2">The photos and videos on your phone, sorted by day, week, month or year, and on your TV with a single tap. No accounts, no ads, nothing uploaded.</p>
+        <div class="get reveal d3" id="download">
+          <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.nilportugues.sonrisa_gallery"><svg viewBox="0 0 28 30" aria-hidden="true"><path fill="#00d7fe" d="M1.5 1.2 15.6 15 1.5 28.8C1 28.5.8 28 .8 27.3V2.7c0-.7.2-1.2.7-1.5z"/><path fill="#ffce00" d="m20.3 19.7-4.7-4.7 4.7-4.7 5.6 3.2c1.6.9 1.6 2.4 0 3.3z"/><path fill="#ff3a44" d="M20.3 19.7 15.6 15 1.5 28.8c.5.5 1.4.6 2.4 0z"/><path fill="#00f076" d="M20.3 10.3 3.9 1c-1-.6-1.9-.5-2.4 0L15.6 15z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+          <div class="qr-card"><img src="../img/gallery/qr.svg" alt="QR code to download Sonrisa Gallery on Google Play" width="92" height="92"><div><strong>Scan to install</strong><span>Point your phone's camera here</span></div></div>
+        </div>
+      </div>
+      <div class="stage reveal d2" aria-hidden="true">
+        <div class="phone p2"><img src="../img/gallery/month.jpg" alt="" width="540" height="1200"></div>
+        <div class="phone p3"><img src="../img/gallery/dark.jpg" alt="" width="540" height="1200"></div>
+        <div class="phone p1"><img src="../img/gallery/day.jpg" alt="" width="540" height="1200"></div>
+        <div class="badge-float one">📅 Day · Week · Month · Year</div>
+        <div class="badge-float two">📺 Cast to your TV</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Photos &amp; videos</span><span>Sorted by date</span><span>Slideshows</span><span>Chromecast</span><span>Pinch to zoom</span><span>Light &amp; dark</span><span>No ads</span><span>Nothing uploaded</span>
+      <span>Photos &amp; videos</span><span>Sorted by date</span><span>Slideshows</span><span>Chromecast</span><span>Pinch to zoom</span><span>Light &amp; dark</span><span>No ads</span><span>Nothing uploaded</span>
+    </div>
+  </div>
+
+  <section class="section" id="screens">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A closer look</span>
+        <h2>See it for yourself.</h2>
+        <p>Tap any screen to see it full size, then tap again to zoom in.</p>
+      </div>
+      <div class="carousel-nav" data-carousel="shots"><button data-dir="-1" aria-label="Scroll left">←</button><button data-dir="1" aria-label="Scroll right">→</button></div>
+    </div>
+    <div class="shots" id="shots">
+      <figure class="shot"><button data-zoom="../img/gallery/day@2x.jpg" data-caption="By day"><div class="phone"><img src="../img/gallery/day.jpg" alt="Photos grouped by day" width="540" height="1200" loading="lazy"></div></button><figcaption>By day<span>Today, Yesterday, Saturday…</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/gallery/week@2x.jpg" data-caption="By week"><div class="phone"><img src="../img/gallery/week.jpg" alt="Photos grouped by week" width="540" height="1200" loading="lazy"></div></button><figcaption>By week<span>Starts on your calendar's day</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/gallery/month@2x.jpg" data-caption="By month"><div class="phone"><img src="../img/gallery/month.jpg" alt="Photos grouped by month" width="540" height="1200" loading="lazy"></div></button><figcaption>By month<span>With photo and video counts</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/gallery/select@2x.jpg" data-caption="Select"><div class="phone"><img src="../img/gallery/select.jpg" alt="Selecting several photos" width="540" height="1200" loading="lazy"></div></button><figcaption>Select<span>Share, cast or delete</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/gallery/viewer@2x.jpg" data-caption="Viewer"><div class="phone"><img src="../img/gallery/viewer.jpg" alt="Full-screen photo viewer" width="540" height="1200" loading="lazy"></div></button><figcaption>Viewer<span>Swipe, pinch, play</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/gallery/details@2x.jpg" data-caption="Details"><div class="phone"><img src="../img/gallery/details.jpg" alt="Photo details" width="540" height="1200" loading="lazy"></div></button><figcaption>Details<span>Date, size and folder</span></figcaption></figure>
+      <figure class="shot"><button data-zoom="../img/gallery/dark@2x.jpg" data-caption="Dark mode"><div class="phone"><img src="../img/gallery/dark.jpg" alt="Gallery in dark mode" width="540" height="1200" loading="lazy"></div></button><figcaption>Dark mode<span>Or light, or automatic</span></figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section" id="features" style="padding-top: 0">
+    <div class="wrap">
+      <div class="row">
+        <div class="reveal">
+          <span class="eyebrow">Organized</span>
+          <h3>Day, week, month or year. You choose.</h3>
+          <p>One switch decides how your photos are sorted and grouped, with clear titles like "Today", "Yesterday" or "November 2026" and a count for each group.</p>
+          <ul><li>Newest or oldest first, in one tap</li><li>Uses the date the photo was taken</li><li>Just your camera photos, or everything</li></ul>
+        </div>
+        <div class="row-media reveal d1"><div class="pair"><div class="phone sm"><img src="../img/gallery/day.jpg" alt="Grouped by day" width="540" height="1200" loading="lazy"></div><div class="phone sm"><img src="../img/gallery/month.jpg" alt="Grouped by month" width="540" height="1200" loading="lazy"></div></div></div>
+      </div>
+
+      <div class="row flip">
+        <div class="reveal">
+          <span class="eyebrow">On the big screen</span>
+          <h3>Your phone is the remote.</h3>
+          <p>Pick a TV with the Cast button and send a whole day, month or year as a slideshow. Swipe on your phone and the TV follows. Zoom in and the TV zooms too.</p>
+          <ul><li>Photos and videos, sharp up to 1080p</li><li>Keeps going with your screen off</li><li>Travels only over your home Wi‑Fi</li></ul>
+        </div>
+        <div class="row-media reveal d1"><div class="phone"><img src="../img/gallery/viewer.jpg" alt="Photo viewer with cast button" width="540" height="1200" loading="lazy"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="reveal">
+          <span class="eyebrow">Quick actions</span>
+          <h3>Select a few, or a whole day.</h3>
+          <p>Long-press a photo, tap a few more, or tap a group's circle to select it all. Then share, show on TV or delete.</p>
+          <ul><li>Android confirms before anything is deleted</li><li>Back or ✕ leaves selection</li></ul>
+        </div>
+        <div class="row-media reveal d1"><div class="phone"><img src="../img/gallery/select.jpg" alt="Selection mode" width="540" height="1200" loading="lazy"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow">And more</span><h2>All the little things.</h2></div>
+      <div class="grid">
+        <div class="card reveal"><div class="ic">⚡</div><h4>Fast with thousands</h4><p>A smooth grid even with years of photos.</p></div>
+        <div class="card reveal d1"><div class="ic">▶️</div><h4>Slideshows</h4><p>Play any day, week, month or year, on your phone or your TV.</p></div>
+        <div class="card reveal d2"><div class="ic">🎬</div><h4>Videos too</h4><p>Durations on the thumbnails, and played right in the viewer.</p></div>
+        <div class="card reveal d3"><div class="ic">🔍</div><h4>Pinch to zoom</h4><p>Pinch or double-tap. Tap once to hide the controls.</p></div>
+        <div class="card reveal"><div class="ic">🔄</div><h4>Always up to date</h4><p>New photos show up when you come back to the app.</p></div>
+        <div class="card reveal d1"><div class="ic">🌗</div><h4>Light &amp; dark</h4><p>Light, dark or automatic. In English and Spanish.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="privacy reveal">
+      <span class="eyebrow">Privacy</span>
+      <h2>Nothing leaves your phone.</h2>
+      <p>No accounts, no ads and no analytics. The only photos that ever leave your phone are the ones you send to your TV, and they go over your local Wi‑Fi, never the internet.</p>
+      <div class="stats">
+        <div><b>0</b><span>accounts</span></div>
+        <div><b>0</b><span>photos uploaded</span></div>
+        <div><b>0</b><span>trackers</span></div>
+      </div>
+      <a class="link" href="privacy.html">Read the privacy policy →</a>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head center reveal"><span class="eyebrow">FAQ</span><h2>Questions? Answers.</h2></div>
+      <div class="faq">
+        <details class="reveal"><summary>Does it upload my photos anywhere?</summary><p>No. There's no cloud and no account. Your photos stay on your phone. When you cast, they go straight from your phone to the TV over your home Wi‑Fi.</p></details>
+        <details class="reveal"><summary>Can I see WhatsApp images, downloads and screenshots?</summary><p>Yes. By default you see your camera photos. Tap the title to switch to All photos. The app remembers your choice.</p></details>
+        <details class="reveal"><summary>What do I need to watch on my TV?</summary><p>A Chromecast or a TV with Chromecast built in, on the same Wi‑Fi as your phone. Tap the Cast button and choose your TV.</p></details>
+        <details class="reveal"><summary>Will my videos play on an older Chromecast?</summary><p>Yes. Videos an older Chromecast can't play (HEVC, 4K, HDR) are converted on your phone to 1080p before sending.</p></details>
+        <details class="reveal"><summary>Can I delete photos by accident?</summary><p>Android asks for its own confirmation before any photo is deleted.</p></details>
+        <details class="reveal"><summary>Which languages are available?</summary><p>English and Spanish.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="cta reveal">
+      <img class="app-icon" src="../img/gallery/icon-192.png" alt="" width="84" height="84">
+      <h2>Relive your days.</h2>
+      <p>Get Sonrisa Gallery on Google Play and see your photos the way you remember them.</p>
+      <div class="get">
+        <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.nilportugues.sonrisa_gallery"><svg viewBox="0 0 28 30" aria-hidden="true"><path fill="#00d7fe" d="M1.5 1.2 15.6 15 1.5 28.8C1 28.5.8 28 .8 27.3V2.7c0-.7.2-1.2.7-1.5z"/><path fill="#ffce00" d="m20.3 19.7-4.7-4.7 4.7-4.7 5.6 3.2c1.6.9 1.6 2.4 0 3.3z"/><path fill="#ff3a44" d="M20.3 19.7 15.6 15 1.5 28.8c.5.5 1.4.6 2.4 0z"/><path fill="#00f076" d="M20.3 10.3 3.9 1c-1-.6-1.9-.5-2.4 0L15.6 15z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+        <div class="qr-card"><img src="../img/gallery/qr.svg" alt="QR code to download Sonrisa Gallery on Google Play" width="92" height="92"><div><strong>Scan to install</strong><span>On your Android phone</span></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="../">Sonrisa</a><p class="muted">Little Android apps that make you smile.</p></div>
+      <div><h5>Apps</h5><ul><li><a href="../music-player/">Music Player</a></li><li><a href="./">Gallery</a></li></ul></div>
+      <div><h5>Legal</h5><ul><li><a href="privacy.html">Privacy policy</a></li></ul></div>
+      <div><h5>Support</h5><ul><li><a href="#faq">FAQ</a></li><li><a href="mailto:CONTACT_EMAIL">Contact us</a></li></ul></div>
+    </div>
+    <div class="fine"><span>© 2026 Sonrisa. All rights reserved.</span><span>Google Play and the Google Play logo are trademarks of Google LLC.</span></div>
+  </div>
+</footer>
+</body>
+</html>
