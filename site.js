@@ -14,6 +14,36 @@
     els.forEach((el) => io.observe(el));
   } else els.forEach((el) => el.classList.add('in'));
 
+  // Home hero: each phone walks through its app. Before a screen changes, a "tap" shows where
+  // you'd touch in the real app (data-tap="x%,y%" on the screen being left).
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.demo').forEach((demo, n) => {
+    const shots = [...demo.querySelectorAll('.screens img')];
+    const tap = demo.querySelector('.tap');
+    const label = demo.querySelector('.demo-label');
+    let i = 0;
+    shots[0].classList.add('on');
+    if (still || shots.length < 2) return;
+    const step = () => {
+      const cur = shots[i], next = shots[(i + 1) % shots.length], wrap = i === shots.length - 1;
+      const go = () => {
+        shots.forEach((s) => s.classList.remove('off', 'fade'));
+        cur.classList.remove('on');
+        cur.classList.add(wrap ? 'fade' : 'off');
+        next.classList.add('on');
+        label.textContent = next.dataset.label;
+        i = (i + 1) % shots.length;
+      };
+      if (cur.dataset.tap) {
+        const [x, y] = cur.dataset.tap.split(',');
+        tap.style.left = `${x}%`; tap.style.top = `${y}%`;
+        tap.classList.remove('show'); void tap.offsetWidth; tap.classList.add('show');
+        setTimeout(go, 380);
+      } else go();
+    };
+    setTimeout(() => setInterval(step, 2800), 1200 + n * 1400);
+  });
+
   // Carousel arrows
   document.querySelectorAll('[data-carousel]').forEach((nav) => {
     const track = document.getElementById(nav.dataset.carousel);
